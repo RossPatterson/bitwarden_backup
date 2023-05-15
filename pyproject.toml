@@ -1,0 +1,39 @@
+[project]
+name = "bitwarden_backup"
+version = "1.0.0"
+authors = [
+  { name="Ross Patterson", email="ross.patterson@gmail.com" },
+]
+description = "Back up your Bitwarden vault"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+#dynamic = ["version"]
+license = "MIT"
+keywords = [
+	"bitwarden",
+]
+dependencies = [
+	"click",
+	"datetime",
+	"os",
+	"json",
+	"random",
+	"shutil",
+	"subprocess",
+	"sys",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RossPatterson/bitwarden_backup"
+"Bug Tracker" = "https://github.com/RossPatterson/bitwarden_backup/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool]
